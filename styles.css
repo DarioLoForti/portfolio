@@ -70,3 +70,32 @@ footer {
    border: 1px solid white;
    padding: 10px;
 }
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skills-list img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #323436 !important;
+}
