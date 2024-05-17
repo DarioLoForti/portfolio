@@ -13,3 +13,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeWriter();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "BDoctors si propone di semplificare l'interazione tra medici e pazienti attraverso un ambiente intuitivo e funzionale, arricchito da una selezione di colori studiata appositamente per garantire un'esperienza visiva gradevole e professionale.Per i professionisti della salute, BDoctors offre la possibilità di creare una vetrina digitale completa, dove esporre specializzazioni, servizi e recensioni dei pazienti. Grazie alle opzioni di sponsorizzazione Base, Avanzata e Premium, è possibile aumentare la visibilità del proprio profilo, con la libertà di modificarlo o eliminarlo in qualsiasi momento, mantenendo così il pieno controllo sulla propria presenza sulla piattaforma. Per i pazienti, BDoctors offre una vasta selezione di medici tra cui scegliere, con la possibilità di filtrare per specializzazione, città o nome. I risultati possono essere ordinati in base alla media delle recensioni e al numero di valutazioni ricevute. Inoltre, i pazienti possono esprimere le proprie opinioni attraverso voti, recensioni o messaggi diretti ai medici, tutto attraverso un'interfaccia colorata e user-friendly. Per lo sviluppo di BDoctors, abbiamo sfruttato appieno le tecnologie apprese durante il corso, con l'obiettivo di offrire agli utenti un'esperienza all'altezza delle loro aspettative. Per il front-end, abbiamo utilizzato HTML, SCSS, Bootstrap, JavaScript, Vue.js e Vite, per creare un'interfaccia utente intuitiva e reattiva. Mentre per il back-end, ci siamo affidati a PHP e Laravel, sfruttando le loro potenti funzionalità per gestire in modo efficiente le richieste degli utenti e manipolare i dati nel nostro sistema. Inoltre, abbiamo integrato con successo pacchetti come Chart.js per la visualizzazione dei dati tramite grafici e Braintree per la gestione dei pagamenti.";
+    let i = 0;
+    const speed = 20; // Velocità di battitura
+
+    function Writer() {
+        if (i < text.length) {
+            document.getElementById("writer").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(Writer, speed);
+        }
+    }
+
+    Writer();
+});
